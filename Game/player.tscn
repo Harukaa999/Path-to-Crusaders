@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cfiy68xjd50yt" path="res://Art/SimpleCharacter/Girl-Sheet.png" id="1_5b6tr"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_buk1g"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_0maca"]
-radius = 6.08276
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fu5rj"]
+size = Vector2(9.5, 7)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rbrmw"]
 atlas = ExtResource("1_5b6tr")
@@ -656,7 +656,9 @@ collision_layer = 2
 script = ExtResource("1_buk1g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_0maca")
+z_index = 7
+position = Vector2(0.25, -3.5)
+shape = SubResource("RectangleShape2D_fu5rj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
