@@ -6229,7 +6229,7 @@ sources/20 = SubResource("TileSetAtlasSource_ubmex")
 position = Vector2(-1, 0)
 
 [node name="player" parent="." instance=ExtResource("1_3qash")]
-position = Vector2(2, 46)
+position = Vector2(-2, -59)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
