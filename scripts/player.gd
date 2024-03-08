@@ -51,5 +51,4 @@ func animate() -> void:
 	animationTree.set(blend_pos_paths[state], blend_position)
 	
 	
-	
-	
+
