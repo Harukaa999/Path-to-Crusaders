@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://iuscof77tdsg"]
+
+[ext_resource type="PackedScene" uid="uid://dxdn4lsqy386o" path="res://Game/Tilemaps/tile_map_cashier.tscn" id="1_dqhep"]
+
+[node name="Cashier" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+z_index = 9
+polygon = PackedVector2Array(1069, -518, 1075, -518, 1075, -338, 796, -338, 796, -520, 804, -520, 1068, -520, 1068, -503, 1069, -469, 837, -468.337, 837, -408, 853, -408, 853, -401, 816, -401, 816, -345, 836.979, -345, 837, -356, 850, -356, 850, -345, 853, -345, 853, -356, 867, -356, 867, -345, 870, -345, 870, -356, 883, -356, 883, -345, 886.994, -345, 887, -359, 1010, -359, 1010, -394, 886, -394, 886, -408, 898, -408, 898, -444, 1006, -444, 1005.85, -408, 1018, -408, 1017.62, -345, 1069, -345)
+
+[node name="TileMap_Cashier" parent="." instance=ExtResource("1_dqhep")]

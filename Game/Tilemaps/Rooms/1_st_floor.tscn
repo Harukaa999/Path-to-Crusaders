@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://4j1aefn8yu0w"]
+
+[ext_resource type="PackedScene" uid="uid://cuhfrl1tekbar" path="res://Game/tile_map_1st_floor.tscn" id="1_2ht11"]
+
+[node name="1st Floor" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+z_index = 100
+position = Vector2(-78, 30.4013)
+scale = Vector2(1, 0.635756)
+polygon = PackedVector2Array(5, 5.36002, -174, 5.45463, -174, 31, 5, 31)
+
+[node name="Walls1" type="CollisionPolygon2D" parent="."]
+z_index = 100
+polygon = PackedVector2Array(64, 34, 211, 34, 211, -172.248, -80, -172, -80, -187, 212, -187, 309, -187, 309, -297, 309, -424, 548, -424, 548, -345, 532, -345, 532, -418, 498, -418, 498, -312, 581, -312, 582, -260, 341, -260, 341, -260, 582, -260, 582, -424, 598, -424, 598, -472, 492, -472, 309, -472, 309, -724, 497, -724, 497, -518, 581.386, -518, 581, -780, 360, -780, 360, -787, 524, -787, 524, -866, 582, -866, 582, -897, 642, -897, 642, -922, 664, -922, 665, -908, 716, -908, 715, -954, 739, -953.872, 739, -1040, 920, -1040, 920, -1056, 721, -1056, 722, -1261, 639, -1261, 639, -1230, 632, -1230, 632, -1261, 632, -1307, 721.396, -1307.08, 721.449, -1340.43, 571, -1340, 571, -1308, 579, -1308, 579, -1230, 571, -1230, 571, -1168, 539, -1168, 539, -1137, 506, -1136, 506, -1103, 539, -1103, 539, -993, 29, -993, 29, -1341, -550.157, -1341.98, -550, -1244, -154, -1245, -154, -187, -135, -187, -128, -187, -128, -171, -146, -171, -146, -181, -154, -181, -154, -108, -582, -108, -582, -1244, -582, -1342, -582, -1370, 799, -1371, 950, -1371, 949, -855, 949, -820, 605, -819.989, 605, -518, 605, -474, 605, -424, 605, -260, 605, -221, 341, -221, 341, 49, 64, 49)
+
+[node name="Table" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(244, -566, 274, -566, 274, -470, 244, -470)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+z_index = 5
+position = Vector2(0, -1.66731)
+scale = Vector2(1, 1.02885)
+polygon = PackedVector2Array(-581, 34.6672, -582, -163.613, -582, 40.0661, -583, 142.555, 342, 142.555, 342, 47.3028, 341, 141.583, -582, 141.583, -582, 50.2185, -318, 50, -318, 34.6672)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+z_index = 6
+polygon = PackedVector2Array(-69, -68, -69, -45, -41, -45, -41, -68)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+z_index = 6
+position = Vector2(100, -1)
+polygon = PackedVector2Array(-69, -68, -69, -45, -41, -45, -41, -68)
+
+[node name="TileMap" parent="." instance=ExtResource("1_2ht11")]
