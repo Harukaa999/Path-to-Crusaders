@@ -1,28 +1,28 @@
-[gd_scene load_steps=43 format=3 uid="uid://byfwmghyw5x1j"]
+[gd_scene load_steps=43 format=3 uid="uid://h0yhyvf26u0k"]
 
-[ext_resource type="Texture2D" uid="uid://daxiw5nn2t5an" path="res://Art/Interiors/assets_interior_bedroom.png" id="1_d86c4"]
-[ext_resource type="Texture2D" uid="uid://dhmfubko0pmic" path="res://Art/Pixel Art TopDown/Texture/TX Tileset Wall.png" id="2_0opow"]
-[ext_resource type="Texture2D" uid="uid://ber2l2p30qoon" path="res://Art/Pixel Art TopDown/Texture/TX Struct.png" id="3_84bpf"]
-[ext_resource type="Texture2D" uid="uid://ijw4arsba107" path="res://Art/Pixel Art TopDown/Texture/TX Tileset Stone Ground.png" id="4_hb8cu"]
-[ext_resource type="Texture2D" uid="uid://cs8rq77ci8qlg" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FloorsAndWalls.png" id="5_sdpnq"]
-[ext_resource type="Texture2D" uid="uid://bkgbg2dh1x3e5" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FurnitureState1.png" id="6_vvvcv"]
-[ext_resource type="Texture2D" uid="uid://bqyqykqboufoh" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FurnitureState2.png" id="7_grifi"]
-[ext_resource type="Texture2D" uid="uid://xeonv475omef" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_SmallItems.png" id="8_pl5bt"]
-[ext_resource type="Texture2D" uid="uid://g0dhw77g8ryw" path="res://Art/Pixel Art TopDown/Texture/TX Props.png" id="9_me6v0"]
-[ext_resource type="Texture2D" uid="uid://uuyofjdf84ik" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.2.png" id="10_vi4ia"]
-[ext_resource type="Texture2D" uid="uid://lrmsambyp0hm" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.3.png" id="11_4mjqc"]
-[ext_resource type="Texture2D" uid="uid://djeavcujaun0b" path="res://Art/Tiny Swords/Tiny Swords (Update 010)/Terrain/Ground/Shadows.png" id="12_gnp0e"]
-[ext_resource type="Texture2D" uid="uid://iht10jkytsv6" path="res://Art/Desaturated Tileset/idfk.png" id="13_7a3rr"]
-[ext_resource type="Texture2D" uid="uid://cc6rltdguddq3" path="res://Art/Interiors/interior free.png" id="14_6xebi"]
-[ext_resource type="Texture2D" uid="uid://bbabau1d0167l" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_DoorsAndWindows.png" id="15_g6psv"]
-[ext_resource type="Texture2D" uid="uid://ct1w1e8ttyv8b" path="res://Art/Traditional School/Autotiles walls.png" id="16_4vi36"]
-[ext_resource type="Texture2D" uid="uid://bkfuuetn2b2pb" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Walls 1.1.png" id="17_ntlp5"]
-[ext_resource type="Texture2D" uid="uid://dp3b62fdqe1h4" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Structures1.1.png" id="18_n342v"]
-[ext_resource type="Texture2D" uid="uid://tj1wd2vspns6" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.1.png" id="19_uh4do"]
-[ext_resource type="Texture2D" uid="uid://chmcp37qq8dv5" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Grounds 1.1.png" id="20_gg7mm"]
+[ext_resource type="Texture2D" uid="uid://daxiw5nn2t5an" path="res://Art/Interiors/assets_interior_bedroom.png" id="1_cuoie"]
+[ext_resource type="Texture2D" uid="uid://dhmfubko0pmic" path="res://Art/Pixel Art TopDown/Texture/TX Tileset Wall.png" id="2_y2l63"]
+[ext_resource type="Texture2D" uid="uid://ber2l2p30qoon" path="res://Art/Pixel Art TopDown/Texture/TX Struct.png" id="3_xn0jw"]
+[ext_resource type="Texture2D" uid="uid://ijw4arsba107" path="res://Art/Pixel Art TopDown/Texture/TX Tileset Stone Ground.png" id="4_dn436"]
+[ext_resource type="Texture2D" uid="uid://cs8rq77ci8qlg" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FloorsAndWalls.png" id="5_vlirt"]
+[ext_resource type="Texture2D" uid="uid://bkgbg2dh1x3e5" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FurnitureState1.png" id="6_1dab1"]
+[ext_resource type="Texture2D" uid="uid://bqyqykqboufoh" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_FurnitureState2.png" id="7_w8nnv"]
+[ext_resource type="Texture2D" uid="uid://xeonv475omef" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_SmallItems.png" id="8_2lo4t"]
+[ext_resource type="Texture2D" uid="uid://g0dhw77g8ryw" path="res://Art/Pixel Art TopDown/Texture/TX Props.png" id="9_cpepd"]
+[ext_resource type="Texture2D" uid="uid://uuyofjdf84ik" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.2.png" id="10_i2b12"]
+[ext_resource type="Texture2D" uid="uid://lrmsambyp0hm" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.3.png" id="11_gkcwb"]
+[ext_resource type="Texture2D" uid="uid://djeavcujaun0b" path="res://Art/Tiny Swords/Tiny Swords (Update 010)/Terrain/Ground/Shadows.png" id="12_gw3dx"]
+[ext_resource type="Texture2D" uid="uid://iht10jkytsv6" path="res://Art/Desaturated Tileset/idfk.png" id="13_wkyan"]
+[ext_resource type="Texture2D" uid="uid://cc6rltdguddq3" path="res://Art/Interiors/interior free.png" id="14_vyckr"]
+[ext_resource type="Texture2D" uid="uid://bbabau1d0167l" path="res://Art/Top-Down_Retro_Interior/TopDownHouse_DoorsAndWindows.png" id="15_ip8cd"]
+[ext_resource type="Texture2D" uid="uid://ct1w1e8ttyv8b" path="res://Art/Traditional School/Autotiles walls.png" id="16_xx5ux"]
+[ext_resource type="Texture2D" uid="uid://bkfuuetn2b2pb" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Walls 1.1.png" id="17_1uyko"]
+[ext_resource type="Texture2D" uid="uid://dp3b62fdqe1h4" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Structures1.1.png" id="18_l5d81"]
+[ext_resource type="Texture2D" uid="uid://tj1wd2vspns6" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.1.png" id="19_p11me"]
+[ext_resource type="Texture2D" uid="uid://chmcp37qq8dv5" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Grounds 1.1.png" id="20_w75ca"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgfam"]
-texture = ExtResource("1_d86c4")
+texture = ExtResource("1_cuoie")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -888,7 +888,7 @@ texture = ExtResource("1_d86c4")
 11:48/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dqyhg"]
-texture = ExtResource("2_0opow")
+texture = ExtResource("2_y2l63")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -1083,7 +1083,7 @@ texture = ExtResource("2_0opow")
 11:21/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ydfi3"]
-texture = ExtResource("3_84bpf")
+texture = ExtResource("3_xn0jw")
 25:1/0 = 0
 26:1/0 = 0
 27:1/0 = 0
@@ -1288,7 +1288,7 @@ texture = ExtResource("3_84bpf")
 18:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xxnci"]
-texture = ExtResource("4_hb8cu")
+texture = ExtResource("4_dn436")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1491,7 +1491,7 @@ texture = ExtResource("4_hb8cu")
 15:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_khbp1"]
-texture = ExtResource("5_sdpnq")
+texture = ExtResource("5_vlirt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1656,7 +1656,7 @@ texture = ExtResource("5_sdpnq")
 17:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6r2ry"]
-texture = ExtResource("6_vvvcv")
+texture = ExtResource("6_1dab1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1892,7 +1892,7 @@ texture = ExtResource("6_vvvcv")
 12:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yaw1r"]
-texture = ExtResource("7_grifi")
+texture = ExtResource("7_w8nnv")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2128,7 +2128,7 @@ texture = ExtResource("7_grifi")
 12:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1u0u6"]
-texture = ExtResource("8_pl5bt")
+texture = ExtResource("8_2lo4t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2195,7 +2195,7 @@ texture = ExtResource("8_pl5bt")
 7:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d336s"]
-texture = ExtResource("9_me6v0")
+texture = ExtResource("9_cpepd")
 14:0/0 = 0
 15:0/0 = 0
 24:0/0 = 0
@@ -2551,7 +2551,7 @@ texture = ExtResource("9_me6v0")
 19:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfuwy"]
-texture = ExtResource("10_vi4ia")
+texture = ExtResource("10_i2b12")
 margins = Vector2i(4, 0)
 14:0/0 = 0
 15:0/0 = 0
@@ -3240,7 +3240,7 @@ margins = Vector2i(4, 0)
 24:30/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ovekl"]
-texture = ExtResource("11_4mjqc")
+texture = ExtResource("11_gkcwb")
 margins = Vector2i(12, 2)
 0:0/0 = 0
 1:0/0 = 0
@@ -3820,7 +3820,7 @@ margins = Vector2i(12, 2)
 16:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0smv5"]
-texture = ExtResource("12_gnp0e")
+texture = ExtResource("12_gw3dx")
 4:3/0 = 0
 5:3/0 = 0
 6:3/0 = 0
@@ -3855,7 +3855,7 @@ texture = ExtResource("12_gnp0e")
 7:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ubmex"]
-texture = ExtResource("13_7a3rr")
+texture = ExtResource("13_wkyan")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -4279,7 +4279,7 @@ texture = ExtResource("13_7a3rr")
 20:30/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kep35"]
-texture = ExtResource("14_6xebi")
+texture = ExtResource("14_vyckr")
 0:0/0 = 0
 1:0/0 = 0
 3:0/0 = 0
@@ -4321,7 +4321,7 @@ texture = ExtResource("14_6xebi")
 1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wh6h4"]
-texture = ExtResource("4_hb8cu")
+texture = ExtResource("4_dn436")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -4524,7 +4524,7 @@ texture = ExtResource("4_hb8cu")
 15:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_412y8"]
-texture = ExtResource("15_g6psv")
+texture = ExtResource("15_ip8cd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -4701,7 +4701,7 @@ texture = ExtResource("15_g6psv")
 17:9/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fjhdt"]
-texture = ExtResource("16_4vi36")
+texture = ExtResource("16_xx5ux")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -5024,7 +5024,7 @@ texture = ExtResource("16_4vi36")
 15:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0bqt"]
-texture = ExtResource("17_ntlp5")
+texture = ExtResource("17_1uyko")
 8:2/0 = 0
 9:2/0 = 0
 10:2/0 = 0
@@ -5685,7 +5685,7 @@ texture = ExtResource("17_ntlp5")
 49:29/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtj2t"]
-texture = ExtResource("18_n342v")
+texture = ExtResource("18_l5d81")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -6165,7 +6165,7 @@ texture = ExtResource("18_n342v")
 0:22/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8klb0"]
-texture = ExtResource("19_uh4do")
+texture = ExtResource("19_p11me")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -6859,7 +6859,7 @@ texture = ExtResource("19_uh4do")
 25:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_14skd"]
-texture = ExtResource("20_gg7mm")
+texture = ExtResource("20_w75ca")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
