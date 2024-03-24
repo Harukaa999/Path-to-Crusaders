@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c73i4o2drnoos"]
+
+[node name="Counselor\'s Office Door" type="Area2D"]
+
+[node name="Marker2D" type="Marker2D" parent="."]

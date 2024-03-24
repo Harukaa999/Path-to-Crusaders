@@ -50,5 +50,3 @@ func animate() -> void:
 	state_machine.travel(animTree_state_keys[state])
 	animationTree.set(blend_pos_paths[state], blend_position)
 	
-	
-
