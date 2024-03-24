@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://8uygcxwlto1x"]
+[gd_scene load_steps=46 format=3 uid="uid://8uygcxwlto1x"]
 
 [ext_resource type="Texture2D" uid="uid://daxiw5nn2t5an" path="res://Art/Interiors/assets_interior_bedroom.png" id="1_vw35t"]
 [ext_resource type="Texture2D" uid="uid://dhmfubko0pmic" path="res://Art/Pixel Art TopDown/Texture/TX Tileset Wall.png" id="2_57c8i"]
@@ -20,6 +20,8 @@
 [ext_resource type="Texture2D" uid="uid://dp3b62fdqe1h4" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Structures1.1.png" id="18_2kuhq"]
 [ext_resource type="Texture2D" uid="uid://tj1wd2vspns6" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Props 1.1.png" id="19_8aq1e"]
 [ext_resource type="Texture2D" uid="uid://chmcp37qq8dv5" path="res://Art/Traditional School/Traditional School Asset pack 32x32/Grounds 1.1.png" id="20_apvy2"]
+[ext_resource type="PackedScene" uid="uid://dmh7qo6jfia0n" path="res://Game/player.tscn" id="21_fhu63"]
+[ext_resource type="Script" path="res://Game/Tilemaps/Rooms/Area2D.gd" id="22_808y2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgfam"]
 texture = ExtResource("1_vw35t")
@@ -7140,8 +7142,11 @@ sources/20 = SubResource("TileSetAtlasSource_ubmex")
 sources/0 = SubResource("TileSetAtlasSource_sgfam")
 sources/23 = SubResource("TileSetAtlasSource_kep35")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6eka"]
+size = Vector2(33.2906, 23.7918)
+
 [node name="TileMap" type="TileMap"]
-position = Vector2(61, -29)
+position = Vector2(-1048, 486)
 scale = Vector2(1.03159, 0.987738)
 tile_set = SubResource("TileSet_xkgc7")
 format = 2
@@ -7169,5 +7174,23 @@ layer_9/tile_data = PackedInt32Array()
 layer_10/name = "top ground down2"
 layer_10/tile_data = PackedInt32Array()
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+scale = Vector2(1, 1)
 polygon = PackedVector2Array(1016.88, -495.071, 1192.33, -495.071, 1192.33, -448.499, 1055.65, -448.499, 1055.65, -438.375, 1066.32, -438.375, 1066.32, -422.177, 1064.38, -422.177, 1064.38, -404.966, 1055.65, -404.966, 1055.65, -333.084, 1064.38, -333.084, 1064.38, -304.737, 1056.62, -304.737, 1056.62, -223.744, 1169.53, -223.744, 1169.07, -368.519, 1184.58, -368.519, 1184.58, -223.744, 1183.61, -373.581, 1174.89, -373.581, 1174.89, -387.755, 1172.95, -387.755, 1172.95, -409.015, 1177.79, -409.015, 1177.79, -416.102, 1184.58, -416.102, 1184.58, -447.487, 1191.36, -447.487, 1191.36, -215.644, 1016.88, -215.644)
+
+[node name="player" parent="." instance=ExtResource("21_fhu63")]
+position = Vector2(1104.12, -227.793)
+
+[node name="Door" type="Area2D" parent="."]
+script = ExtResource("22_808y2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(1104.12, -236.905)
+scale = Vector2(0.999999, 1)
+shape = SubResource("RectangleShape2D_j6eka")
+
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
+[connection signal="body_exited" from="Door" to="Door" method="_on_body_exited"]

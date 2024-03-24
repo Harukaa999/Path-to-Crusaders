@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bujeod8o63u5g"]
+
+[ext_resource type="PackedScene" uid="uid://4j1aefn8yu0w" path="res://Game/Tilemaps/Rooms/1_st_floor.tscn" id="1_0ian8"]
+[ext_resource type="PackedScene" uid="uid://c73i4o2drnoos" path="res://Game/counselor's_office_door.tscn" id="2_7uf3o"]
+[ext_resource type="PackedScene" uid="uid://b5lc12inbewcg" path="res://Game/registrar_door.tscn" id="3_gbnqw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrc6r"]
+size = Vector2(14, 26)
+
+[node name="PlayerDetector" type="Area2D"]
+
+[node name="1st Floor" parent="." instance=ExtResource("1_0ian8")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-581, -1371, 950, -1371, 950, -822, 606, -822, 604, -219, 341, -219, 342, 145, -583, 144)
+
+[node name="Counselor\'s Office Door" parent="." instance=ExtResource("2_7uf3o")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Counselor\'s Office Door"]
+position = Vector2(302, -629)
+shape = SubResource("RectangleShape2D_lrc6r")
+
+[node name="Registrar Door" parent="." instance=ExtResource("3_gbnqw")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Registrar Door"]
+position = Vector2(302, -503)
+shape = SubResource("RectangleShape2D_lrc6r")
