@@ -1,11 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cwve88fdnrjdn"]
 
-[ext_resource type="Script" path="res://Game/1_st_floor.gd" id="1_a77tj"]
-[ext_resource type="PackedScene" uid="uid://cuhfrl1tekbar" path="res://Game/Tilemaps/Rooms/tile_map_1st_floor.tscn" id="1_yymvh"]
-[ext_resource type="Script" path="res://Game/Registrar Door.gd" id="3_844w5"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrc6r"]
-size = Vector2(14, 26)
+[ext_resource type="Script" path="res://scripts/1_st_floor.gd" id="1_a77tj"]
+[ext_resource type="PackedScene" uid="uid://cuhfrl1tekbar" path="res://Game/Scenes/tile_map_1st_floor.tscn" id="1_yymvh"]
+[ext_resource type="PackedScene" uid="uid://05aywq75y1yq" path="res://scripts/door.tscn" id="4_tenac"]
+[ext_resource type="PackedScene" uid="uid://d0hies7frcho2" path="res://Game/Scenes/character.tscn" id="5_jucya"]
 
 [node name="1st Floor" type="Node2D"]
 script = ExtResource("1_a77tj")
@@ -42,20 +40,22 @@ polygon = PackedVector2Array(-69, -68, -69, -45, -41, -45, -41, -68)
 
 [node name="TileMap" parent="1st Floor" instance=ExtResource("1_yymvh")]
 
-[node name="Counselor\'s Office Door" type="Area2D" parent="1st Floor"]
-position = Vector2(302, -629)
+[node name="Doors" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="1st Floor/Counselor\'s Office Door"]
-shape = SubResource("RectangleShape2D_lrc6r")
+[node name="Door_W" parent="Doors" instance=ExtResource("4_tenac")]
+position = Vector2(307, -503)
+destination_level_tag = "registrar"
+destination_door_tag = "E"
 
-[node name="Registrar Door" type="Area2D" parent="1st Floor"]
-position = Vector2(302, -503)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("3_844w5")
+[node name="spawn" parent="Doors/Door_W" index="1"]
+position = Vector2(-16, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="1st Floor/Registrar Door"]
-shape = SubResource("RectangleShape2D_lrc6r")
+[node name="Door_W2" parent="Doors" instance=ExtResource("4_tenac")]
+position = Vector2(308, -630)
+destination_level_tag = "counselor"
+destination_door_tag = "Counsel"
 
-[connection signal="body_entered" from="1st Floor/Registrar Door" to="1st Floor/Registrar Door" method="_on_body_entered"]
-[connection signal="body_exited" from="1st Floor/Registrar Door" to="1st Floor/Registrar Door" method="_on_body_exited"]
+[node name="player" parent="." instance=ExtResource("5_jucya")]
+position = Vector2(274, -619)
+
+[editable path="Doors/Door_W"]

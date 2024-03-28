@@ -15,6 +15,10 @@ run/main_scene="res://Game/game.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NavigationManager="*res://scripts/navigation_manager.gd"
+
 [display]
 
 window/size/viewport_width=1080
@@ -52,6 +56,7 @@ interact={
 
 2d_physics/layer_1="world"
 2d_physics/layer_2="player"
+2d_physics/layer_4="triggers"
 
 [rendering]
 

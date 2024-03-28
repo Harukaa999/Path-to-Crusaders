@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://iuscof77tdsg"]
 
-[ext_resource type="PackedScene" uid="uid://dxdn4lsqy386o" path="res://Game/Tilemaps/tile_map_cashier.tscn" id="1_dqhep"]
+[ext_resource type="PackedScene" uid="uid://dxdn4lsqy386o" path="res://Game/Scenes/tile_map_cashier.tscn" id="1_dqhep"]
 
 [node name="Cashier" type="StaticBody2D"]
 
