@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
+
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var camera = $Camera2D
+
 const ACCELERATION = 800
 const FRICTION = 500
-const MAX_SPEED = 120
+const MAX_SPEED = 200
 
 enum {IDLE, RUN}
 var state = IDLE
@@ -49,4 +53,13 @@ func apply_movement(amount) -> void:
 func animate() -> void:
 	state_machine.travel(animTree_state_keys[state])
 	animationTree.set(blend_pos_paths[state], blend_position)
+
+
+func _ready():
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
+	animation_player.play("move_" + direction)
+	animation_player.stop
 	

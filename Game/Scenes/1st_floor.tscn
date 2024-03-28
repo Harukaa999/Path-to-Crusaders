@@ -1,11 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpybdbfpfghbh"]
+[gd_scene load_steps=2 format=3 uid="uid://4j1aefn8yu0w"]
 
-[ext_resource type="PackedScene" uid="uid://cuhfrl1tekbar" path="res://Game/Tilemaps/Rooms/tile_map_1st_floor.tscn" id="1_os5um"]
-[ext_resource type="PackedScene" uid="uid://c73i4o2drnoos" path="res://Game/counselor's_office_door.tscn" id="2_76v0f"]
-[ext_resource type="PackedScene" uid="uid://b5lc12inbewcg" path="res://Game/registrar_door.tscn" id="3_bkd7q"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrc6r"]
-size = Vector2(14, 26)
+[ext_resource type="PackedScene" uid="uid://cuhfrl1tekbar" path="res://Game/Scenes/tile_map_1st_floor.tscn" id="1_2ht11"]
 
 [node name="1st Floor" type="StaticBody2D"]
 
@@ -37,22 +32,4 @@ z_index = 6
 position = Vector2(100, -1)
 polygon = PackedVector2Array(-69, -68, -69, -45, -41, -45, -41, -68)
 
-[node name="TileMap" parent="." instance=ExtResource("1_os5um")]
-
-[node name="PlayerDetector" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayerDetector"]
-visible = false
-polygon = PackedVector2Array(-581, -1371, 950, -1371, 950, -822, 606, -822, 604, -219, 341, -219, 342, 145, -583, 144)
-
-[node name="Counselor\'s Office Door" parent="PlayerDetector" instance=ExtResource("2_76v0f")]
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerDetector/Counselor\'s Office Door"]
-position = Vector2(302, -629)
-shape = SubResource("RectangleShape2D_lrc6r")
-
-[node name="Registrar Door" parent="PlayerDetector" instance=ExtResource("3_bkd7q")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector/Registrar Door"]
-position = Vector2(302, -503)
-shape = SubResource("RectangleShape2D_lrc6r")
+[node name="TileMap" parent="." instance=ExtResource("1_2ht11")]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://drrudvj7j7icd"]
+
+[ext_resource type="Script" path="res://scripts/Way.gd" id="1_8ljn2"]
+
+[node name="Way" type="Area2D"]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_8ljn2")

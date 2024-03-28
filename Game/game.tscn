@@ -1,20 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://cemcd14ke070v"]
+[gd_scene load_steps=7 format=3 uid="uid://cemcd14ke070v"]
 
-[ext_resource type="PackedScene" uid="uid://d0hies7frcho2" path="res://Game/Tilemaps/player.tscn" id="1_fpcth"]
-[ext_resource type="PackedScene" uid="uid://byl8b4ltbv11w" path="res://Game/Tilemaps/Rooms/tile_map_2nd_floor.tscn" id="2_djci8"]
-[ext_resource type="PackedScene" uid="uid://d1dcmijpymxyy" path="res://Game/Tilemaps/Rooms/tile_map_counselor's_office.tscn" id="4_qaqv8"]
+[ext_resource type="PackedScene" uid="uid://byl8b4ltbv11w" path="res://Game/Scenes/tile_map_2nd_floor.tscn" id="2_djci8"]
 [ext_resource type="PackedScene" uid="uid://2n4clqjsqany" path="res://Game/tile_map.tscn" id="4_uqljf"]
-[ext_resource type="PackedScene" uid="uid://dxdn4lsqy386o" path="res://Game/Tilemaps/tile_map_cashier.tscn" id="5_17jk3"]
-[ext_resource type="PackedScene" uid="uid://c2sd0pjjyhf8k" path="res://Game/Tilemaps/Rooms/tile_map_clinic.tscn" id="6_he5mn"]
-[ext_resource type="PackedScene" uid="uid://8uygcxwlto1x" path="res://Game/Tilemaps/Rooms/tile_map_registar.tscn" id="7_utkgq"]
-[ext_resource type="PackedScene" uid="uid://2ma0eii4hr2n" path="res://Game/Tilemaps/tile_map_cr.tscn" id="8_vssik"]
-[ext_resource type="PackedScene" uid="uid://cwve88fdnrjdn" path="res://Game/1_st_floor.tscn" id="10_jhwkn"]
+[ext_resource type="PackedScene" uid="uid://dxdn4lsqy386o" path="res://Game/Scenes/tile_map_cashier.tscn" id="5_17jk3"]
+[ext_resource type="PackedScene" uid="uid://c2sd0pjjyhf8k" path="res://Game/Scenes/tile_map_clinic.tscn" id="6_he5mn"]
+[ext_resource type="PackedScene" uid="uid://2ma0eii4hr2n" path="res://Game/Scenes/tile_map_cr.tscn" id="8_vssik"]
+[ext_resource type="PackedScene" uid="uid://cwve88fdnrjdn" path="res://Game/lobby.tscn" id="10_jhwkn"]
 
 [node name="game" type="Node2D"]
+position = Vector2(13, 1)
 metadata/_edit_horizontal_guides_ = [-146.0]
-
-[node name="player" parent="." instance=ExtResource("1_fpcth")]
-position = Vector2(297, -450)
 
 [node name="TileMap" parent="." instance=ExtResource("4_uqljf")]
 visible = true
@@ -502,10 +497,6 @@ layer_8/z_index = 8
 layer_9/z_index = 8
 layer_10/z_index = 9
 
-[node name="Counselor\'s Office" parent="." instance=ExtResource("4_qaqv8")]
-position = Vector2(40, -31)
-scale = Vector2(1.06418, 0.975626)
-
 [node name="Cashier" type="StaticBody2D" parent="."]
 
 [node name="TileMap_Cashier" parent="Cashier" instance=ExtResource("5_17jk3")]
@@ -515,8 +506,6 @@ polygon = PackedVector2Array(1069, -518, 1075, -518, 1075, -338, 796, -338, 796,
 
 [node name="Clinic" parent="." instance=ExtResource("6_he5mn")]
 
-[node name="Registrar" parent="." instance=ExtResource("7_utkgq")]
-
 [node name="2nd Floor" parent="." instance=ExtResource("2_djci8")]
 
 [node name="cr" parent="." instance=ExtResource("8_vssik")]
@@ -524,3 +513,9 @@ position = Vector2(4.00024, 340)
 scale = Vector2(1.06418, 0.975626)
 
 [node name="1st Floor" parent="." instance=ExtResource("10_jhwkn")]
+
+[node name="CollisionShape2D" parent="1st Floor/Doors/Door_W" index="0"]
+position = Vector2(2, 0)
+
+[editable path="1st Floor"]
+[editable path="1st Floor/Doors/Door_W"]
